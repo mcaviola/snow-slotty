@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Displays a Hello World message for test purposes</description>
+        <media_type/>
+        <name>HelloWorld</name>
+        <scoped_name>x_183180_slotty_HelloWorld</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-30 18:28:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bf4335e60f170300277a8f8ce1050e30</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>HelloWorld</sys_name>
+        <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
+        <sys_update_name>sys_ui_macro_bf4335e60f170300277a8f8ce1050e30</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-30 21:46:10</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" 
+    xmlns:j="jelly:core" 
+    xmlns:g="glide" 
+    xmlns:j2="null" 
+    xmlns:g2="null">
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
+<!-- 	<g:requires name="x_hotel.angular.min.1.4.12.jsdbx" /> -->
+	<g:evaluate var="jvar_gr" object="true">
+		var gr = new GlideRecord("x_183180_slotty_fixtext");
+		gr.addQuery('u_segment_nr', 1);
+<!-- 		gr.addQuery('u_project_ref.sys_id', current.sys_id); -->
+		gr.query();
+		gr;
+	</g:evaluate>
+	<ul>
+		<j:while test="${jvar_gr.next()}">
+			<li>${jvar_gr.getValue('u_fixtext_text')}</li>
+		</j:while>
+	</ul>
+	
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

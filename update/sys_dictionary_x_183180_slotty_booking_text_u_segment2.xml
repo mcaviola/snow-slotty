@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_project_ref" table="x_183180_slotty_booking_text">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_segment2" table="x_183180_slotty_booking_text">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Project</column_label>
+        <column_label>Segment 2</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -23,20 +23,20 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_project_ref</element>
+        <element>u_segment2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>32</max_length>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
         <name>x_183180_slotty_booking_text</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_183180_slotty_project">x_183180_slotty_project</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -48,18 +48,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-12-29 14:43:38</sys_created_on>
+        <sys_created_on>2017-12-30 22:52:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>11b63fc60fdf0300277a8f8ce1050e8a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Project</sys_name>
+        <sys_id>b22072ea0f970300277a8f8ce1050e05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Segment 2</sys_name>
         <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
-        <sys_update_name>sys_dictionary_x_183180_slotty_booking_text_u_project_ref</sys_update_name>
+        <sys_update_name>sys_dictionary_x_183180_slotty_booking_text_u_segment2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-12-30 22:43:38</sys_updated_on>
+        <sys_updated_on>2017-12-30 22:52:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

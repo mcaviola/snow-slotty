@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>Allows to compose booking texts based on the segment text options available for the project</description>
+        <direct>false</direct>
+        <endpoint>x_183180_slotty_Text Composer.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" 
+    xmlns:j="jelly:core" 
+    xmlns:g="glide" 
+    xmlns:j2="null" 
+    xmlns:g2="null">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	
+	// Retrieve fixtext options for segment 1
+	<g:evaluate var="jvar_segment1" object="true">
+		var gr = new GlideRecord("x_183180_slotty_fixtext");
+		gr.addQuery('u_segment_nr', 1);
+<!-- 		gr.addQuery('u_project_ref.sys_id', current.sys_id); -->
+		gr.query();
+		gr;
+	</g:evaluate>
+
+	// List fixtest options for segment 1
+	<div style="display:block;" ng-app="myAngularModule">
+		<div ng-controller="myAngularController">
+			<ul>
+				<j:while test="${jvar_segment1.next()}">
+					<li>${jvar_segment1.getValue('u_fixtext_text')}</li>
+				</j:while>
+			</ul>
+			<p>message={{text}}</p>
+		</div>
+	</div>
+	
+	// Angular Controller
+	<script>
+        var myApp = angular.module('myAngularModule', []);
+        myApp.controller('myAngularController', [
+            '$scope',
+            function($scope) {
+                $scope.text="???"
+            }
+        ] );
+    </script>
+</j:jelly>
+]]></html>
+        <name>Text Composer</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-30 16:35:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3c89d12a0fd30300277a8f8ce1050e01</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Text Composer</sys_name>
+        <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
+        <sys_update_name>sys_ui_page_3c89d12a0fd30300277a8f8ce1050e01</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-30 22:00:25</sys_updated_on>
+    </sys_ui_page>
+</record_update>

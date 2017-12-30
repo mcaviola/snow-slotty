@@ -5,13 +5,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-29 14:43:39</sys_created_on>
-            <sys_id>69b67fc60fdf0300277a8f8ce1050e5d</sys_id>
+            <sys_created_on>2017-12-30 22:52:25</sys_created_on>
+            <sys_id>f620b2ea0f970300277a8f8ce1050e99</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Booking text" display_value="Booking text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">1e1577860fdf0300277a8f8ce1050eac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-29 14:43:39</sys_updated_on>
+            <sys_updated_on>2017-12-30 22:52:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,55 @@
             <element>u_project_ref</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-29 14:43:39</sys_created_on>
-            <sys_id>e9b67fc60fdf0300277a8f8ce1050e5d</sys_id>
+            <sys_created_on>2017-12-30 22:52:25</sys_created_on>
+            <sys_id>7a20b2ea0f970300277a8f8ce1050e99</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Booking text" display_value="Booking text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">1e1577860fdf0300277a8f8ce1050eac</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-29 14:43:39</sys_updated_on>
+            <sys_updated_on>2017-12-30 22:52:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-30 22:52:25</sys_created_on>
+            <sys_id>fa20b2ea0f970300277a8f8ce1050e99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Booking text" display_value="Booking text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">1e1577860fdf0300277a8f8ce1050eac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-30 22:52:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_segment1</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-30 22:52:25</sys_created_on>
+            <sys_id>7e20b2ea0f970300277a8f8ce1050e99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Booking text" display_value="Booking text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">1e1577860fdf0300277a8f8ce1050eac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-30 22:52:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_segment2</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-30 22:52:25</sys_created_on>
+            <sys_id>fe20b2ea0f970300277a8f8ce1050e99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Booking text" display_value="Booking text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">1e1577860fdf0300277a8f8ce1050eac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-30 22:52:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
