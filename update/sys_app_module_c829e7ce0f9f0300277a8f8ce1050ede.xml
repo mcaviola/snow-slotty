@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Work Reporting (Slotty)">c029e7ce0f9f0300277a8f8ce1050edc</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Projects</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_183180_slotty_project</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-29 13:44:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c829e7ce0f9f0300277a8f8ce1050ede</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Projects</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
+        <sys_update_name>sys_app_module_c829e7ce0f9f0300277a8f8ce1050ede</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-29 13:44:18</sys_updated_on>
+        <timeline_page/>
+        <title>Projects</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="47467bc60fdf0300277a8f8ce1050e3e" sys_domain="global" table="x_183180_slotty_booking_text" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-29 14:41:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf467bc60fdf0300277a8f8ce1050e8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_183180_slotty_booking_text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">47467bc60fdf0300277a8f8ce1050e3e</sys_ui_form>
+            <sys_ui_section caption="Booking text" display_value="Booking text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">1e1577860fdf0300277a8f8ce1050eac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-29 14:41:51</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-29 14:41:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b467bc60fdf0300277a8f8ce1050e8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_183180_slotty_booking_text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">47467bc60fdf0300277a8f8ce1050e3e</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">4b467bc60fdf0300277a8f8ce1050e3d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-29 14:41:51</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-29 15:35:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1da2809e0fdf0300277a8f8ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_183180_slotty_booking_text" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">47467bc60fdf0300277a8f8ce1050e3e</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_183180_slotty_booking_text" sys_domain="global" view="Default view">89a2409e0fdf0300277a8f8ce1050e80</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-29 15:35:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_183180_slotty_booking_text</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-12-29 14:41:51</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>47467bc60fdf0300277a8f8ce1050e3e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_183180_slotty_booking_text</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
+            <sys_update_name>sys_ui_form_sections_47467bc60fdf0300277a8f8ce1050e3e</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-12-29 14:41:51</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Fixtext" max_length="40" name="x_183180_slotty_fixtext" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Text" mandatory="true" max_length="40" name="u_fixtext_text" type="string"/>
+        <element label="Project" mandatory="true" max_length="32" name="u_project_ref" reference="x_183180_slotty_project" type="reference"/>
+        <element choice="3" default="1" label="Segment number" mandatory="true" max_length="40" name="u_segment_nr" type="integer">
+            <choice>
+                <element label="Segment 1" sequence="0" value="1"/>
+                <element label="Segment 2" sequence="1" value="2"/>
+                <element label="Segment 3" sequence="2" value="3"/>
+                <element label="Segment 4" sequence="3" value="4"/>
+                <element label="Segment 5" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_project_ref"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Booking Text" max_length="40" name="x_183180_slotty_booking_text" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Project" mandatory="true" max_length="32" name="u_project_ref" reference="x_183180_slotty_project" type="reference"/>
+        <element label="New Reference" max_length="32" name="u_reference_1" reference="x_183180_slotty_project" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="Segment 1" label="noclue" max_length="40" name="u_segment1_label" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Segment 1" max_length="40" name="u_segment1_value" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
+        <index name="index2">
+            <element name="u_project_ref"/>
+        </index>
+    </element>
+</database>
