@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>This UI page redirects to the booking form. But before that it makes sure, that a user-specific booking record exists. This is accomplished by the BookingUtil script include.</description>
+        <direct>false</direct>
+        <endpoint>x_183180_slotty_UserSpecificBookingPage.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:evaluate>
+		var gurk="Gurk funktioniert!";
+		var myUrl = "x_183180_slotty_booking.do?user=" + gs.getUser();
+		BookingUtil.createUserBookingRecordIfMissing(gs.getUser());		
+	</g:evaluate>
+	<p>url=${myUrl}</p>	
+	<p>gurk=${gurk}</p>
+	<iframe src="${myUrl}" width="100%" height="90%" style="border:none;"></iframe> 
+</j:jelly>]]></html>
+        <name>UserSpecificBookingPage</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-03 12:17:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4a6381f30f1f8300277a8f8ce1050e81</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>UserSpecificBookingPage</sys_name>
+        <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
+        <sys_update_name>sys_ui_page_4a6381f30f1f8300277a8f8ce1050e81</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-03 12:46:26</sys_updated_on>
+    </sys_ui_page>
+</record_update>

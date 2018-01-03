@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Test based on https://community.servicenow.com/thread/237335</description>
+        <media_type/>
+        <name>Website</name>
+        <scoped_name>x_183180_slotty_Website</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-12-31 09:59:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5e9849b60fdb0300277a8f8ce1050ec6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Website</sys_name>
+        <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
+        <sys_update_name>sys_ui_macro_5e9849b60fdb0300277a8f8ce1050ec6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-12-31 10:15:45</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>  
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">  
+  <g:evaluate jelly="true">  
+  var gr = new GlideRecord(jelly.jvar_ref_table);  
+  if (gr.get(jelly.sys_id)) { 
+	  gs.info('sys_id=' + jelly.sys_id);
+	  gs.info('url=' + gr.u_url);  
+  }  
+  </g:evaluate>  
+<!--   Website: <a target="_blank" href='${gr.u_url}'>LINK</a>   -->
+	This is the project ${gr.u_project_title}
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

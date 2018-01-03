@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Project" max_length="40" name="x_183180_slotty_project" type="collection">
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Project title" mandatory="true" max_length="40" name="u_project_title" type="string"/>
-        <element attributes="edge_encryption_enabled=true" display="true" label="SAP nr" mandatory="true" max_length="40" name="u_sap_nr" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Segment 1 title" max_length="40" name="u_segment1_title" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Segment 2 title" max_length="40" name="u_segment2_title" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Segment 3 title" max_length="40" name="u_segment3_title" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Segment 4 title" max_length="40" name="u_segment4_title" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Segment 5 title" max_length="40" name="u_segment5_title" type="string"/>
+        <element label="Classifier levels" max_length="40" name="classifier_levels" read_only="true" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ID" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Project title" mandatory="true" max_length="40" name="u_project_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SAP nr" mandatory="true" max_length="40" name="u_sap_nr" type="string"/>
     </element>
 </database>

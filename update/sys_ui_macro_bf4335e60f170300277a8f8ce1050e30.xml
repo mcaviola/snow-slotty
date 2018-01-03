@@ -12,7 +12,7 @@
         <sys_created_on>2017-12-30 18:28:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bf4335e60f170300277a8f8ce1050e30</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>99</sys_mod_count>
         <sys_name>HelloWorld</sys_name>
         <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
         <sys_policy/>
@@ -20,27 +20,64 @@
         <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
         <sys_update_name>sys_ui_macro_bf4335e60f170300277a8f8ce1050e30</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-12-30 21:46:10</sys_updated_on>
+        <sys_updated_on>2017-12-31 17:31:45</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" 
     xmlns:j="jelly:core" 
     xmlns:g="glide" 
-    xmlns:j2="null" 
-    xmlns:g2="null">
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
-<!-- 	<g:requires name="x_hotel.angular.min.1.4.12.jsdbx" /> -->
-	<g:evaluate var="jvar_gr" object="true">
+    xmlns:j2="jelly:core" 
+    xmlns:g2="glide">
+	<g:evaluate jelly="true" object="true" copyToPhase2="true">  
+		var p1 = new GlideRecord(jelly.jvar_ref_table);
+		p1.addQuery('sys_id',jelly.sys_id);
+		p1.query();
+<!--  		var current_sap_nr1 = p1.get(jelly.sys_id) ? p1.u_sap_nr : "(none)";   -->
+	</g:evaluate>
+<hr/>
+	<j:if test="${p1.hasNext()}">
+        <h3>Phase 1</h3>
+		<j:while test="${p1.next()}">
+            <p>${p1.u_sap_nr}</p>
+        </j:while>
+     </j:if>
+<!-- 	<h3>current_sap_nr1=(${current_sap_nr1})</h3> -->
+<!-- 	<g2:evaluate jelly="true">  
+		var p2 = new GlideRecord(jelly.jvar_ref_table);
+		p2.addQuery('sys_id',jelly.sys_id);
+		p2.query();
+	</g2:evaluate>  -->
+	<hr/>
+	<j2:if test="$[p1.hasNext()]">
+        <h3>Phase 1</h3>
+		<j2:while test="$[p1.next()]">
+            <p>$[p1.u_sap_nr]</p>
+        </j2:while>
+    </j2:if>
+<!-- 	<h3>current_sap_nr2=($[current_sap_nr2])</h3> -->
+<!-- 	<g2:evaluate jelly="true">
+	   var gf = jelly.context.getGlideForm();
+	   var current_row = gf.getRowNumber();
+	</g2:evaluate>
+	<h3>current_row=($[current_row])</h3> -->
+<!--<g2:evaluate jelly="true">  
+		var p = new GlideRecord(jelly.jvar_ref_table);
+		var current_sys_id = "???";
+		current_sys_id = p.get(jelly.sys_id) ? p.sys_id : "(none)"; 
+	</g2:evaluate>  
+ 	<g2:evaluate var="jvar_gr" object="true" jelly="true">
 		var gr = new GlideRecord("x_183180_slotty_fixtext");
 		gr.addQuery('u_segment_nr', 1);
-<!-- 		gr.addQuery('u_project_ref.sys_id', current.sys_id); -->
+ 		gr.addQuery('u_project_ref.sys_id', current_sys_id);
 		gr.query();
 		gr;
-	</g:evaluate>
+	</g2:evaluate>
+	<h3>List of Fixtexts</h3>
+	<p>4 - current_sys_id=($[current_sys_id])</p>
 	<ul>
-		<j:while test="${jvar_gr.next()}">
-			<li>${jvar_gr.getValue('u_fixtext_text')}</li>
-		</j:while>
-	</ul>
+		<j2:while test="$[jvar_gr.next()]">
+			<li>$[jvar_gr.getValue('u_fixtext_text')]</li>
+		</j2:while>
+	</ul> -->
 	
 </j:jelly>]]></xml>
     </sys_ui_macro>

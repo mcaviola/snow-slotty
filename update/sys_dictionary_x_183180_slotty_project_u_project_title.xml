@@ -18,7 +18,7 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>false</display>
+        <display>true</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -51,7 +51,7 @@
         <sys_created_on>2017-12-29 13:53:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7b4beb020fdf0300277a8f8ce1050e9c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Project title</sys_name>
         <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
         <sys_policy/>
@@ -59,7 +59,7 @@
         <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
         <sys_update_name>sys_dictionary_x_183180_slotty_project_u_project_title</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-12-29 14:23:44</sys_updated_on>
+        <sys_updated_on>2018-01-02 07:47:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

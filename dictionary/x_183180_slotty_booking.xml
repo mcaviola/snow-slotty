@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Booking" max_length="40" name="x_183180_slotty_booking" type="collection">
+        <element attributes="tree_picker=true" dependent="project" dependent_on_field="project" label="Booking option" max_length="32" name="booking_option" reference="x_183180_slotty_classifier" type="reference" use_dependent_field="true"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="External Text" max_length="2000" name="external_text" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Internal Text" max_length="40" name="internal_text" type="string"/>
+        <element label="Level" max_length="40" name="level" read_only="true" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="ID" max_length="40" name="number" type="string"/>
+        <element label="Project" max_length="32" name="project" reference="x_183180_slotty_project" type="reference"/>
+        <element label="User" max_length="32" name="user" read_only="true" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="booking_option"/>
+        </index>
+        <index name="index2">
+            <element name="external_text"/>
+        </index>
+        <index name="index3">
+            <element name="project"/>
+        </index>
+        <index name="index4">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

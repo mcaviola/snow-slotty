@@ -3,18 +3,18 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_183180_slotty_fixtext" version="2" view="sys_ref_list">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>u_fixtext_text</element>
-            <list_id display_value="x_183180_slotty_fixtext" element="NULL" name="x_183180_slotty_fixtext" parent="NULL" relationship="NULL" sys_domain="global" view="3976271090300300a21c513b6aad7680">9f2b21a20f170300277a8f8ce1050e2f</list_id>
+            <element>sys_id</element>
+            <list_id display_value="x_183180_slotty_fixtext" element="NULL" name="x_183180_slotty_fixtext" parent="NULL" relationship="NULL" sys_domain="global" view="3976271090300300a21c513b6aad7680">0027b1b70f9f8300277a8f8ce1050ed0</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-30 17:50:59</sys_created_on>
-            <sys_id>5b2b21a20f170300277a8f8ce1050e30</sys_id>
+            <sys_created_on>2018-01-03 15:55:35</sys_created_on>
+            <sys_id>8427b1b70f9f8300277a8f8ce1050ed0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-30 17:50:59</sys_updated_on>
+            <sys_updated_on>2018-01-03 15:55:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -28,11 +28,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-12-30 17:50:58</sys_created_on>
+            <sys_created_on>2018-01-03 15:55:35</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9f2b21a20f170300277a8f8ce1050e2f</sys_id>
+            <sys_id>0027b1b70f9f8300277a8f8ce1050ed0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_183180_slotty_fixtext</sys_name>
             <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
@@ -41,7 +41,7 @@
             <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
             <sys_update_name>sys_ui_list_x_183180_slotty_fixtext_sys_ref_list</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-12-30 17:50:58</sys_updated_on>
+            <sys_updated_on>2018-01-03 15:55:35</sys_updated_on>
             <sys_user/>
             <view display_value="Reference List" name="sys_ref_list">3976271090300300a21c513b6aad7680</view>
             <view_name/>

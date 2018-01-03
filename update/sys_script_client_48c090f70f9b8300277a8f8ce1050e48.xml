@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>number</field>
+        <global>true</global>
+        <messages/>
+        <name>Find max classifier level  (IDLE)</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+//    if (isLoading || newValue === '') {
+//       return;
+//    }
+
+   //Use ProjectUtil script include to retrieve the maximum level
+alert("gugus!!!");
+   g_form.setValue('classifier_levels', ProjectUtil.getMaxClassifierLevel(newValue));
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-03 08:30:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48c090f70f9b8300277a8f8ce1050e48</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Find max classifier level  (IDLE)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Slotty" source="x_183180_slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Slotty">bc78230a0f9f0300277a8f8ce1050e94</sys_scope>
+        <sys_update_name>sys_script_client_48c090f70f9b8300277a8f8ce1050e48</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-03 17:38:31</sys_updated_on>
+        <table>x_183180_slotty_project</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
